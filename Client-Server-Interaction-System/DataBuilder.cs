@@ -44,5 +44,17 @@ namespace CSIS
         {
             return SendToClient(player, JsonConvert.SerializeObject(Activator.CreateInstance<T>()));
         }
+
+        public static NetPacket SendToClient(TSPlayer player, object t)
+        {
+            return SendToClient(player.Index, JsonConvert.SerializeObject(t));
+        }
+
+        public static NetPacket SendToClient(int player, object t)
+        {
+            return SendToClient(player, JsonConvert.SerializeObject(t));
+        }
+
+
     }
 }

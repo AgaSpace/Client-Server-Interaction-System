@@ -13,6 +13,9 @@ namespace CSIS
     [ApiVersion(2, 1)]
     public class MainPlugin : TerrariaPlugin
     {
+        public override string Author => "Zoom L1";
+        public override string Name => "CSIS";
+
         public MainPlugin(Main main) : base(main) { }
 
         public override void Initialize() => ServerApi.Hooks.GamePostInitialize.Register(this, PostInitialize);
