@@ -9,52 +9,45 @@ namespace CSIS
 {
     public static class Controller
     {
-        public static NetPacket SendToClient(int playerId, string data)
+        public static NetPacket SendToClient(int indexData, int playerId, string data)
         {
             NetPacket packet = NetModule.CreatePacket<SCModule>(sizeof(int) + Encoding.UTF8.GetByteCount(data));
 
-            packet.Writer.Write(playerId);
+            packet.Writer.Write(indexData);
             packet.Writer.Write(data);
 
             NetManager.Instance.SendToClient(packet, playerId);
             return packet;
         }
 
-        public static NetPacket SendToClient(TSPlayer player, string data)
+        public static NetPacket SendToClient(TSPlayer player, int indexData, string data)
         {
-            return SendToClient(player.Index, data);
+            return SendToClient(indexData, player.Index, data);
         }
 
-        public static NetPacket SendToClient(TSPlayer player, Dictionary<string, object> data)
+        public static NetPacket SendToClient(TSPlayer player, int indexData, Dictionary<string, object> data)
         {
-            return SendToClient(player.Index, JsonConvert.SerializeObject(data));
+            return SendToClient(indexData, player.Index, JsonConvert.SerializeObject(data));
         }
 
-        public static NetPacket SendToClient(int player, Dictionary<string, object> data)
+        public static NetPacket SendToClient(int player, int indexData, Dictionary<string, object> data)
         {
-            return SendToClient(player, JsonConvert.SerializeObject(data));
+            return SendToClient(indexData, player, JsonConvert.SerializeObject(data));
         }
 
-        public static NetPacket SendToClient<T>(TSPlayer player) where T : class
+        public static NetPacket SendToClient<T>(TSPlayer player, int indexData) where T : class
         {
-            return SendToClient(player.Index, JsonConvert.SerializeObject(Activator.CreateInstance<T>()));
+            return SendToClient(indexData, player.Index, JsonConvert.SerializeObject(Activator.CreateInstance<T>()));
         }
 
-        public static NetPacket SendToClient<T>(int player) where T : class
+        public static NetPacket SendToClient<T>(int player, int indexData) where T : class
         {
-            return SendToClient(player, JsonConvert.SerializeObject(Activator.CreateInstance<T>()));
+            return SendToClient(indexData, player, JsonConvert.SerializeObject(Activator.CreateInstance<T>()));
         }
 
-        public static NetPacket SendToClient(TSPlayer player, object t)
+        public static NetPacket SendToClient(TSPlayer player, int indexData, object t)
         {
-            return SendToClient(player.Index, JsonConvert.SerializeObject(t));
+            return SendToClient(indexData, player.Index, JsonConvert.SerializeObject(t));
         }
-
-        public static NetPacket SendToClient(int player, object t)
-        {
-            return SendToClient(player, JsonConvert.SerializeObject(t));
-        }
-
-
     }
 }
