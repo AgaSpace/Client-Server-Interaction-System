@@ -3,7 +3,7 @@
 
 public void OnGameInitialize() // Main.Initialize() { ...; OnGameInitialize(); this.LoadContent_TryEnteringHiDef(); this.ClientInitialize(); base.Initialize(); }
 {
-	NetManager.Instance._modules.Add(11, new Demovers.SyncServerModule());
+	NetManager.Instance._modules.Add(11, new .SyncServerModule());
 }
 
 /*
