@@ -1,5 +1,5 @@
-//To begin with, you must in some way implement into the client NetModule with index 11.
-//I implemented it like this: I made the fields public and wrote the following: 
+// To begin with, you must in some way implement into the client NetModule with index 11.
+// I implemented it like this: I made the fields public and wrote the following: 
 
 public void OnGameInitialize() // Main.Initialize() { ...; OnGameInitialize(); this.LoadContent_TryEnteringHiDef(); this.ClientInitialize(); base.Initialize(); }
 {
@@ -7,7 +7,7 @@ public void OnGameInitialize() // Main.Initialize() { ...; OnGameInitialize(); t
 }
 
 /*
-Yes, I forgot to mention, we need a class that refers to NetModule 
+	Yes, I forgot to mention, we need a class that refers to NetModule 
 */
 
 public class SyncServerModule : NetModule
