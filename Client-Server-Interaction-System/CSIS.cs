@@ -22,7 +22,7 @@ namespace CSIS
 
         public static void PostInitialize(EventArgs args)
         {
-            NetManager.Instance._modules.Add(SCModule.Id, new SCModule());
+            //NetManager.Instance._modules.Add(SCModule.Id, new SCModule());
         }
     }
 }

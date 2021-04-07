@@ -9,11 +9,11 @@ namespace CSIS
 {
     public class SCModule : NetModule
     {
-        public const byte Id = 64;
+        public const byte Id = 11;
 
         public override bool Deserialize(BinaryReader reader, int userId)
         {
-            return true;
+            return false;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace CSIS
     {
         public static NetPacket SendToClient(string index, int playerId, string data)
         {
-            NetPacket packet = NetModule.CreatePacket<SCModule>(Encoding.UTF8.GetByteCount(index) + Encoding.UTF8.GetByteCount(data));
+            NetPacket packet = new NetPacket(11, (Encoding.UTF8.GetByteCount(index) + Encoding.UTF8.GetByteCount(data)));
 
             packet.Writer.Write(index);
             packet.Writer.Write(data);
