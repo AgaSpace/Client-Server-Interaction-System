@@ -13,8 +13,6 @@ C:\Users\AgaSp\source\repos\Client-Server-Interaction-System\Client-Server-Inter
 C:\Users\AgaSp\source\repos\Client-Server-Interaction-System\Client-Server-Interaction-System\obj\Debug\Client-Server-Interaction-System.csproj.CopyComplete
 C:\Users\AgaSp\source\repos\Client-Server-Interaction-System\Client-Server-Interaction-System\obj\Debug\Client-Server-Interaction-System.dll
 C:\Users\AgaSp\source\repos\Client-Server-Interaction-System\Client-Server-Interaction-System\obj\Debug\Client-Server-Interaction-System.pdb
-C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\bin\Debug\Client-Server-Interaction-System.dll
-C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\bin\Debug\Client-Server-Interaction-System.pdb
 C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\bin\Debug\Newtonsoft.Json.dll
 C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\bin\Debug\OTAPI.dll
 C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\bin\Debug\TerrariaServer.exe
@@ -22,5 +20,7 @@ C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-I
 C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\obj\Debug\Client-Server-Interaction-System.csprojAssemblyReference.cache
 C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\obj\Debug\Client-Server-Interaction-System.csproj.CoreCompileInputs.cache
 C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\obj\Debug\Client-Server-Interaction-System.csproj.CopyComplete
-C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\obj\Debug\Client-Server-Interaction-System.dll
-C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\obj\Debug\Client-Server-Interaction-System.pdb
+C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\bin\Debug\CSIS.dll
+C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\bin\Debug\CSIS.pdb
+C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\obj\Debug\CSIS.dll
+C:\Users\AgaSp\Documents\GitHub\Client-Server-Interaction-System\Client-Server-Interaction-System\obj\Debug\CSIS.pdb
