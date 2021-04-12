@@ -11,18 +11,20 @@ using Terraria.Net;
 namespace CSIS
 {
     [ApiVersion(2, 1)]
-    public class MainPlugin : TerrariaPlugin
+    public class CSIS : TerrariaPlugin
     {
+        public static Dictionary<string, Action<string, int>> Reader = new Dictionary<string, Action<string, int>>();
+
         public override string Author => "Zoom L1";
         public override string Name => "CSIS";
 
-        public MainPlugin(Main main) : base(main) { }
+        public CSIS(Main main) : base(main) { }
 
         public override void Initialize() => ServerApi.Hooks.GamePostInitialize.Register(this, PostInitialize);
 
         public static void PostInitialize(EventArgs args)
         {
-            //NetManager.Instance._modules.Add(SCModule.Id, new SCModule());
+            NetManager.Instance._modules.Add(SCModule.Id, new SCModule());
         }
     }
 }
